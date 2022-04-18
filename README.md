@@ -2,7 +2,7 @@
 A website for reserving lands on different islands anywhere
 
 ## In Backend/config.env
-Replace <User> and <Password> with your own login credentials  
+Replace User and Password with your own login credentials  
 
 ## Start Frontend
 cd Frontend  
