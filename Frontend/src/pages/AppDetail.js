@@ -1,5 +1,6 @@
 import React from 'react';
 import './AppDetail.css';
+import LandView from '../components/LandView.js';
 /**
  * app home
  */
@@ -99,6 +100,14 @@ import './AppDetail.css';
                   <p>Address:{this.state.address}</p>
                   <p>Lands:{this.state.lands}</p>
               </div>
+          </div>
+          <div className='col-sm-12'>
+            <div className='land-list'>
+              <LandView cover='/5.png' title='Land1' size='5557.0' reserve={true} />
+              <LandView cover='/5.png' title='Land2' size='5148.0' reserve={true} />
+              <LandView cover='/5.png' title='Land3' size='4759.0' reserve={false} />
+              <LandView cover='/5.png' title='Land4' size='680.0' reserve={true} />
+            </div>
           </div>
       </div>
   </div>);

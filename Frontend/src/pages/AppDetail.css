@@ -196,3 +196,55 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+.land-list{
+  width: 100%;
+}
+.land-list .land-item{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.land-list .land-item .land-image{
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.land-list .land-item .land-image img{
+  width: 100%;
+  display: block;
+}
+.land-list .land-item .land-title{
+  flex: 0 0 25%;
+  max-width: 25%;
+  line-height: 120px;
+  height: 120px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-align: center;
+}
+.land-list .land-item .land-size{
+  flex: 0 0 25%;
+  max-width: 25%;
+  line-height: 120px;
+  height: 120px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-align: center;
+}
+.land-list .land-item .land-opts{
+  flex: 0 0 25%;
+  max-width: 25%;
+  line-height: 120px;
+  height: 120px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-align: center;
+}
