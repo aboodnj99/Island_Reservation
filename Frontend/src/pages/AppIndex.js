@@ -1,12 +1,15 @@
 import React from 'react';
 import './appIndex.css';
 import CardView from '../components/CardView.js';
+import Navbar from '../components/Navbar.js'
 /**
  * app home
  */
  class AppIndex extends React.Component {
   render(){
     return (
+    <>
+    <Navbar page="Gallery"/>
     <div className="row">
       <div className="col-lg-3 col-md-4 col-sm-12">
         <CardView title='Providence Cialis Island' distance='4.9' area='1278781' cover='1.jpg' />
@@ -20,7 +23,9 @@ import CardView from '../components/CardView.js';
       <div className="col-lg-3 col-md-4 col-sm-12">
         <CardView title='Madeira, Portugal' distance='40.9' area='878112' cover='4.jpg' />
       </div>
-    </div>);
+    </div>
+    </>
+  );
   }
  }
 

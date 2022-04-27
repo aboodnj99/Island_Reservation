@@ -1,6 +1,7 @@
 import React from 'react';
 import './AppDetail.css';
 import LandView from '../components/LandView.js';
+import Navbar from '../components/Navbar.js'
 /**
  * app home
  */
@@ -27,7 +28,8 @@ import LandView from '../components/LandView.js';
         detail:"Famed for its crystal clear waters and white sand beaches, a slice of paradise in the Turks and Caicos has been named the best island in the world.",
         distance:"4.9 km",
         address:"Lake Maracaibo, Venezuela, 14 km southeast of Maracaibo, northwest of Santa Rita",
-        lands:"Providence Cialis Island"
+        lands:"Providence Cialis Island",
+        type: type
       };
     }else if(type === '2'){
       this.state = {
@@ -37,7 +39,8 @@ import LandView from '../components/LandView.js';
         detail:"TripAdvisor said the rankings are based on reviews from users around the world, with winners being determined using an algorithm that considers the quantity and quality of reviews and ratings for each island’s hotels, restaurants and attractions",
         distance:"8.9 km",
         address:"Maui is the most famous of the Hawaiian islands, with more than 2.5 million visitors a year, second only to Honolulu and Oahu, home of Pearl Harbor",
-        lands:"Maui, Hawaii"
+        lands:"Maui, Hawaii",
+        type: type
       };
     }else if(type === '3'){
       this.state = {
@@ -47,7 +50,8 @@ import LandView from '../components/LandView.js';
         detail:"Rounding out the top five were Santorini in Greece, which was named the best island in Europe, and Ko Tao in Thailand",
         distance:"8.9 km",
         address:"Seagulls fly to santorini, China, on the northernmost side of the Shengsi islands in Zhoushan, Zhejiang Province",
-        lands:"Santorini"
+        lands:"Santorini",
+        type: type
       };
     }else if(type === '4'){
       this.state = {
@@ -57,7 +61,8 @@ import LandView from '../components/LandView.js';
         detail:"In the European top five, Santorini was followed by Madeira, the Greek islands of Crete and Zakynthos, and Fuerteventura in Spain’s Canary Islands",
         distance:"40.9 km",
         address:"Madeira, in the eastern North Atlantic Ocean, is made up of Madeira island, St. Island, and two small, empty islands",
-        lands:"Madeira"
+        lands:"Madeira",
+        type: type
       };
     }else{
       this.state = {
@@ -67,12 +72,14 @@ import LandView from '../components/LandView.js';
         detail:"",
         distance:"",
         address:"",
-        lands:""
+        lands:"",
       };
     }
   }
   render(){
     return (
+      <>
+      <Navbar page="Detail" type={this.state.type}/>
       <div className="divContent container">
       <div className="row">
           <div className='col-12'>
@@ -110,7 +117,9 @@ import LandView from '../components/LandView.js';
             </div>
           </div>
       </div>
-  </div>);
+  </div>
+  </>
+  );
   }
  }
 
